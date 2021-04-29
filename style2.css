@@ -1,0 +1,125 @@
+@import "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"ubuntu" sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background: url(jj.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    font-size:50px;
+    text-align: center;
+}
+.box.inputbox{
+    position: relative;
+}
+.box.inputbox-p{
+    position: static;
+}
+.box .inputbox input{
+    width: 80%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background:transparent ;
+}
+.box .inputbox-p input{
+    width: 80%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-left: 10px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background:transparent ;
+}
+.box .inputbox-p i{
+    float: right;
+    cursor: pointer;
+    margin: 2px 4px;
+    font-size: 18px;
+    color: #fff;
+}
+#hide{
+    display: none;
+}
+.box i{
+    width: 26px;
+    float: left;
+    color: #fff;
+    text-align: center;
+
+}
+.remember{
+    color: #fff;
+    font-size: 16px;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 50px;
+    color:white;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid #fff;
+    margin-top:16px ;
+    margin-bottom: 16px;
+}
+.btn:hover{
+    background: #fff;
+    color:black;
+}
+.box p{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+.box h3{
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+    font-family: 500;
+}
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.sm a{
+    color: white;
+    width: 50px;
+    font-size: 22px;
+}
+.sm a:hover{
+    color:rgb(231, 33, 33);
+}

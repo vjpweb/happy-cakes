@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign in</title> 
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <div class="box">
+            <h2>login</h2>
+                <div class="inputbox">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Username" name="" value="">
+                </div>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <div class="inputbox-p">
+                    <input type="password" placeholder="Password" name="pwd" id="myInput" value="">
+                    <i class="far fa-eye-slash" id="hide" onclick="myFunction()"></i>
+                    <i class="far fa-eye" id="show"  onclick="myFunction()"></i>
+                </div>
+                <script type="text/javascript">
+                    function myFunction(){
+                      var x =document.getElementById("myInput");
+                      if(x.type =="password"){
+                         x.type="text";
+                         document.getElementById('hide').style.display ="inline-block";
+                         document.getElementById('show').style.display ="none";
+                      }
+                      else{
+                        x.type="password";
+                        document.getElementById('hide').style.display ="none";
+                        document.getElementById('show').style.display ="inline-block";
+                      }
+                    }  
+                </script>
+                <div class="remember">
+                 <label><input type="checkbox" name="">  Remember me</label></div>
+                <a href="home1.html">
+                   <input class="btn" type="submit" name="" value="Sign in"> 
+                </a>
+                <p>Dont have an account<a href="sign up.html">Sign up</a></p>
+                <h3>login with social media</h3>
+                <div class="sm">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+        </div>
+        </ul>
+    </body>
+</html>
